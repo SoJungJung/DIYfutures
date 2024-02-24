@@ -1,0 +1,76 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5dc;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+.header h1 {
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: -1px 0px #020715, 0px 1px #020715, 1px 0px #020715, 0px -1px #020715;
+}
+
+.slides-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.slide {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.slide:hover {
+    transform: translateY(-10px);
+}
+
+.loadContentBtn {
+    background-color: #D40000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.loadContentBtn:hover {
+    background-color: #020715;
+}
+
+.content-placeholders {
+    grid-column: 1 / -1;
+}
+
+.content-placeholder {
+    display: none;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#nextBtn {
+    justify-self: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#nextBtn:hover {
+    background-color: #555;
+}
