@@ -137,3 +137,11 @@ img {
     height: 200px; /* Adjust the height as needed */
     object-fit: cover; /* This property will ensure that the aspect ratio of the image is maintained without stretching, but it may crop the image if its aspect ratio differs from the specified width and height */
 }
+.image-effect {
+    filter: grayscale(50%) blur(2px);
+    transition: filter 0.3s ease;
+}
+
+.image-effect:hover {
+    filter: grayscale(0%) blur(0);
+}

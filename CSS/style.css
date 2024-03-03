@@ -50,6 +50,7 @@ html {
 
 .slide {
     background-color: #ffffff;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
