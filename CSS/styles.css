@@ -1,147 +1,147 @@
 /* Custom Fonts */
 @font-face {
-    font-family: 'MyCustomFont';
-    src: url('../FONTs/AvantGardeLT-Demi.woff') format('woff');
+  font-family: "MyCustomFont";
+  src: url("../src/fonts/AvantGardeLT-Demi.woff") format("woff");
 }
 
 @font-face {
-    font-family: 'MyCustomFont2';
-    src: url('../FONTs/Futura-Bold.woff') format('woff');
+  font-family: "MyCustomFont2";
+  src: url("../src/fonts/Futura-Bold.woff") format("woff");
 }
 
 @font-face {
-    font-family: 'MyCustomFont3';
-    src: url('../FONTs/Formula1-Display-Italic.woff') format('woff');
+  font-family: "MyCustomFont3";
+  src: url("../src/fonts/Formula1-Display-Italic.woff") format("woff");
 }
 
 /* General Reset and Base Styles */
 body,
 html {
-    margin: 0;
-    padding: 0;
-    font-family: 'MyCustomFont', Arial, sans-serif; /* Applying MyCustomFont as the base font */
-    background-color: #97999b;
-    color: #343434;
-    line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  font-family: "MyCustomFont", Arial, sans-serif; /* Applying MyCustomFont as the base font */
+  background-color: #97999b;
+  color: #343434;
+  line-height: 1.6;
 }
 
 a {
-    color: #007bff;
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
 }
 
 a:hover {
-    color: #0056b3;
+  color: #0056b3;
 }
 
 /* Header Styles */
 header {
-    background-color: #020715;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #020715;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-    font-family: 'MyCustomFont2'; /* Applying MyCustomFont2 to header */
+  margin: 0;
+  font-size: 2.5rem;
+  font-family: "MyCustomFont2"; /* Applying MyCustomFont2 to header */
 }
 
 /* Main Content Styling */
 main {
-    padding: 20px;
+  padding: 20px;
 }
 
 section {
-    margin-bottom: 20px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease-in-out;
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
 }
 
 section:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 h2 {
-    color: #d40000;
-    font-family: 'MyCustomFont3'; /* Applying MyCustomFont3 to h2 elements */
+  color: #d40000;
+  font-family: "MyCustomFont3"; /* Applying MyCustomFont3 to h2 elements */
 }
 
 /* Footer Styles */
 footer {
-    background-color: #343434;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    font-size: 0.9rem;
-    font-family: 'MyCustomFont'; /* Consistency in footer text */
+  background-color: #343434;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 0.9rem;
+  font-family: "MyCustomFont"; /* Consistency in footer text */
 }
 
 /* Additional Style Enhancements */
 /* Smoothly rounded buttons for a modern feel */
 button,
 .button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-family: 'MyCustomFont'; /* Consistent font for buttons */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "MyCustomFont"; /* Consistent font for buttons */
 }
 
 button:hover,
 .button:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
 /* Enhance form input aesthetics */
-input[type='text'],
-input[type='email'],
+input[type="text"],
+input[type="email"],
 textarea {
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    width: 100%;
-    box-sizing: border-box; /* Ensures padding does not affect width */
-    font-family: 'Arial', sans-serif; /* Ensures readability */
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box; /* Ensures padding does not affect width */
+  font-family: "Arial", sans-serif; /* Ensures readability */
 }
 
 /* Stylish and modern form button */
-input[type='submit'],
+input[type="submit"],
 .form-button {
-    background-color: #d40000;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: opacity 0.3s ease;
+  background-color: #d40000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
 }
 
-input[type='submit']:hover,
+input[type="submit"]:hover,
 .form-button:hover {
-    opacity: 0.9;
+  opacity: 0.9;
 }
 
 img {
-    width: 300px; /* Adjust the width as needed */
-    height: 200px; /* Adjust the height as needed */
-    object-fit: cover; /* This property will ensure that the aspect ratio of the image is maintained without stretching, but it may crop the image if its aspect ratio differs from the specified width and height */
+  width: 300px; /* Adjust the width as needed */
+  height: 200px; /* Adjust the height as needed */
+  object-fit: cover; /* This property will ensure that the aspect ratio of the image is maintained without stretching, but it may crop the image if its aspect ratio differs from the specified width and height */
 }
 .image-effect {
-    filter: grayscale(50%) blur(2px);
-    transition: filter 0.3s ease;
+  filter: grayscale(50%) blur(2px);
+  transition: filter 0.3s ease;
 }
 
 .image-effect:hover {
-    filter: grayscale(0%) blur(0);
+  filter: grayscale(0%) blur(0);
 }

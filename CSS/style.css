@@ -1,121 +1,121 @@
 /* Custom Fonts */
 @font-face {
-    font-family: 'MyCustomFont';
-    src: url('../FONTs/Futura-Bold.woff') format('woff');
+  font-family: "MyCustomFont";
+  src: url("../src/fonts/Futura-Bold.woff") format("woff");
 }
 
 @font-face {
-    font-family: 'MyCustomFont2';
-    src: url('../FONTs/AvantGardeLT-Demi.woff') format('woff');
+  font-family: "MyCustomFont2";
+  src: url("../src/fonts/AvantGardeLT-Demi.woff") format("woff");
 }
 
 @font-face {
-    font-family: 'MyCustomFont3';
-    src: url('../FONTs/Formula1-Display-Italic.woff') format('woff');
+  font-family: "MyCustomFont3";
+  src: url("../src/fonts/Formula1-Display-Italic.woff") format("woff");
 }
 
 /* Reset */
 body,
 html {
-    margin: 0;
-    padding: 0;
-    font-family: 'MyCustomFont';
-    background-color: #97999b;
+  margin: 0;
+  padding: 0;
+  font-family: "MyCustomFont";
+  background-color: #97999b;
 }
 
 /* Container */
 .container {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    gap: 20px;
-    padding: 20px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 20px;
+  padding: 20px;
 }
 
 /* Header */
 .header h1 {
-    text-align: center;
-    color: #ffffff;
-    text-shadow: -2px 0px #343434, 0px 2px #343434, 2px 0px #343434, 0px -2px #343434;
-    font-family: 'MyCustomFont';
-    font-size: 2.5rem;
-    padding: 0.5rem;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: -2px 0px #343434, 0px 2px #343434, 2px 0px #343434, 0px -2px #343434;
+  font-family: "MyCustomFont";
+  font-size: 2.5rem;
+  padding: 0.5rem;
 }
 
 /* Slides Container */
 .slides-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
 .slide {
-    background-color: #ffffff;
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+  background-color: #ffffff;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
 .slide:hover {
-    transform: translateY(-10px);
+  transform: translateY(-10px);
 }
 
 /* Slide Titles */
 .slides-container .slide h2 {
-    font-family: 'MyCustomFont2', sans-serif;
-    color: #343434; /* Adjust based on your theme */
-    font-size: 1.8rem;
+  font-family: "MyCustomFont2", sans-serif;
+  color: #343434; /* Adjust based on your theme */
+  font-size: 1.8rem;
 }
 
 /* Slide Content */
 .slides-container .slide p {
-    font-family: 'MyCustomFont3', sans-serif;
-    line-height: 1.6;
-    font-size: 1rem;
+  font-family: "MyCustomFont3", sans-serif;
+  line-height: 1.6;
+  font-size: 1rem;
 }
 
 /* Buttons */
 .loadContentBtn {
-    display: inline-block; /* Added to ensure proper spacing and alignment */
-    background-color: #d40000;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    text-decoration: none; /* Remove underline from anchor tags */
-    font-family: 'MyCustomFont2', sans-serif;
-    font-size: 1rem;
-    text-align: center; /* Ensure text is centered */
+  display: inline-block; /* Added to ensure proper spacing and alignment */
+  background-color: #d40000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none; /* Remove underline from anchor tags */
+  font-family: "MyCustomFont2", sans-serif;
+  font-size: 1rem;
+  text-align: center; /* Ensure text is centered */
 }
 
 .loadContentBtn:hover {
-    background-color: #343434;
+  background-color: #343434;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .slides-container {
-        grid-template-columns: 1fr;
-    }
+  .slides-container {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Content Placeholders */
 .content-placeholders {
-    grid-column: 1 / -1;
+  grid-column: 1 / -1;
 }
 
 .content-placeholder {
-    display: none; /* Adjust or use JavaScript to toggle visibility */
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: none; /* Adjust or use JavaScript to toggle visibility */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 #myParagraph {
-    position: relative; /* or 'absolute', 'fixed', or 'sticky' */
-    top: 150px; /* Moves the paragraph 50px down from its current position */
-    left: 500px; /* Moves the paragraph 100px right from its current position */
+  position: relative; /* or 'absolute', 'fixed', or 'sticky' */
+  top: 150px; /* Moves the paragraph 50px down from its current position */
+  left: 500px; /* Moves the paragraph 100px right from its current position */
 }
