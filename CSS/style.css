@@ -50,7 +50,13 @@ body {
     gap: 20px;
     padding: 20px;
 }
-
+header {
+    background: linear-gradient(45deg, #020715, #343434);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 /* Header */
 .header h1 {
     text-align: center;
