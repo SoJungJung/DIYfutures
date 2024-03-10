@@ -1,45 +1,36 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const slides = document.querySelectorAll('.slide');
-    let currentIndex = 0;
-    slides[currentIndex].classList.add('slide-active');
+document.addEventListener('DOMContentLoaded', function () {
+    console.log('DOM fully loaded and parsed');
 
-    document.getElementById('nextBtn').addEventListener('click', function() {
-        const nextIndex = (currentIndex + 1) % slides.length;
-        slides[currentIndex].classList.remove('slide-active');
-        slides[currentIndex].classList.add('slide-previous');
-        slides[nextIndex].classList.add('slide-active');
+    if (!localStorage.getItem('animationPlayed')) {
+        console.log('Playing animation for the first time.');
+        const slides = document.querySelectorAll('.slide');
+        slides.forEach((slide) => (slide.style.opacity = '0'));
+
+        const header = document.querySelector('.header');
+        header.style.opacity = '0'; // Ensure header starts invisible for the animation
 
         setTimeout(() => {
-            slides[currentIndex].classList.remove('slide-previous');
-        }, 500); // Match the duration of the CSS animation
+            header.style.opacity = '1';
+            header.style.transition = 'opacity 2s ease';
+        }, 10); // Start header animation almost immediately
 
-        currentIndex = nextIndex;
-    });
-
-    const loadContentButtons = document.querySelectorAll('.loadContentBtn');
-    loadContentButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            const targetId = this.getAttribute('data-target');
-            const contentPlaceholder = document.getElementById(targetId);
-            const contentUrl = this.getAttribute('data-content-url'); // Get the content URL
-
-            // Toggle visibility if content is already loaded
-            if (contentPlaceholder.style.display === 'block') {
-                contentPlaceholder.style.display = 'none'; // Hide content
-            } else {
-                // Fetch and display the content
-                fetch(contentUrl) // Use the content URL from the button
-                    .then(response => response.text())
-                    .then(html => {
-                        contentPlaceholder.innerHTML = html;
-                        contentPlaceholder.style.display = 'block'; // Show content
-                    })
-                    .catch(error => {
-                        console.error('Error loading the file', error);
-                        contentPlaceholder.innerHTML = `<p>Error loading content. Please try again later.</p>`;
-                        contentPlaceholder.style.display = 'block';
-                    });
-            }
+        let delayTime = 2500; // Start after header animation
+        slides.forEach((slide, index) => {
+            setTimeout(() => {
+                slide.style.opacity = '1';
+            }, delayTime);
+            delayTime += 500; // Increment delay for next slide
         });
+
+        localStorage.setItem('animationPlayed', 'true');
+    } else {
+        console.log('Animation has already played. Skipping.');
+    }
+
+    const footer = document.querySelector('footer');
+    footer.addEventListener('click', function () {
+        window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
     });
+    footer.style.cursor = 'pointer';
+    footer.title = 'Find the secret!';
 });
