@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
             setTimeout(() => {
                 slide.style.opacity = '1';
             }, delayTime);
-            delayTime += 500; // Increment delay for next slide
+            delayTime += 1000; // Increment delay for next slide
         });
 
         localStorage.setItem('animationPlayed', 'true');
