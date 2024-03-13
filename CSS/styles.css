@@ -50,6 +50,10 @@ header h1 {
     font-family: 'MyCustomFont2'; /* Applying MyCustomFont2 to header */
 }
 
+.BackButton {
+    position: absolute;
+}
+
 /* Main Content Styling */
 main {
     padding: 20px;
