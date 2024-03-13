@@ -28,9 +28,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     const footer = document.querySelector('footer');
-    footer.addEventListener('click', function () {
-        window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
-    });
     footer.style.cursor = 'pointer';
     footer.title = 'Find the secret!';
 });
